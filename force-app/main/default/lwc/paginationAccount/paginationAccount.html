@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Account Data">
+        
+        <lightning-datatable data={showData} key-field="Id" columns={column} label="Pagination"></lightning-datatable>
+
+        <lightning-button onclick={handleNext} label="Next"></lightning-button>
+        <p> Live PAGE: {current} TOTAL PAGE={totalPage}</p>
+        <lightning-button onclick={handlePrevious} label="Previous"></lightning-button>
+    </lightning-card>
+</template>
