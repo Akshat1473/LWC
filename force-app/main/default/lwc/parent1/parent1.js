@@ -1,5 +1,8 @@
 import { LightningElement } from 'lwc';
 
 export default class Parent1 extends LightningElement {
-    data= "I am Parent message";
+    value;
+    handleMessage(ram){
+        this.value=ram.detail;
+    }
 }

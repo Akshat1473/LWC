@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Grandpa">
+        <c-parent onselect1={handleinc} onselect2={handleinc} onselect3={handleinc}
+    ondeselect1={handleDec} ondeselect2={handleDec} ondeselect3={handleDec}>
+    </c-parent>
+
+    <h1>Number of Select : {countSelect}</h1>
+    <h1>Number of Deselect: {countDeSelect}</h1>
+
+    <lightning-button 
+      variant="destructive"
+      label="ResetCount" 
+      onclick={handleReset} 
+    ></lightning-button>
+    </lightning-card>
+    
+    
+</template>

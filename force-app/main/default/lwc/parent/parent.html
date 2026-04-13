@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Parent">
+        <c-hero onselect1={showStatusSelect1} ondeselect1={showStatusDeselect1}
+               onselect2={showStatusSelect2} ondeselect2={showStatusDeselect2}
+               onselect3={showStatusSelect3} ondeselect3={showStatusDeselect3}
+               ></c-hero>
+        <h1>Child1 Status: {status1}</h1>
+         <h1>Child2 Status: {status2}</h1>
+         <h1>Child3 Status: {status3}</h1>
+          
+        
+    </lightning-card>
+</template>
